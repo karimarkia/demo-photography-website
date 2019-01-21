@@ -1,0 +1,456 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin:0;
+    
+}
+
+img{
+    max-width: 100%;
+}
+.cover-main{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/hero-bg.jpg') right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+header{
+    background:transparent;
+    position: relative;
+    width: 100%;
+}
+
+header.sticky{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background:rgba(0,0,0,0.85);
+    transform: translateY(-200%);
+    transition: 0.5s;
+    z-index: 5;
+}
+
+body.scroll header.sticky{
+    transform: translateY(0); 
+}
+
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.nav-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 0;
+
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s all;
+    padding-bottom: 3px;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+
+/* Parallax */
+
+ul#scene li.name{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 45px;
+}
+ul#scene li.title{
+    line-height: 35px;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn{
+    margin-top:150px;
+    text-align: center;
+    width: 100%;
+
+}
+
+ul#scene{
+    margin-top: 100px;
+}
+
+.portfolio-btn,.contact-btn{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 1px solid white;
+    margin: 0 auto;
+    display: inline-block;
+    background: transparent;
+    transition: 0.5s all;
+
+}
+
+.portfolio-btn{
+    margin-right: 10px;
+}
+
+.contact-btn{
+    margin-left: 10px;
+}
+
+
+.portfolio-btn:hover,
+.contact-btn:hover{
+    background: white;
+    color: black;
+
+}
+
+
+/* MASONRY JS START */
+
+.masonry-grid{
+    position: relative;
+}
+
+h2.sub-title{
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    margin: 70px auto;
+    position: relative;
+    display: block;
+    font-weight: 400;
+}
+
+h2.sub-title::after{
+    content: "";
+    height: 2px;
+    background: #000000;
+    margin: 30px auto 0 auto;
+    display: block;
+    width: 100px;
+}
+
+.grid{
+    margin: 0 auto;
+}
+
+.grid-item{
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.tall-img{
+    height: 680px;
+}
+
+
+/* BEATING HEART SECTION */ 
+
+.beating-heart{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/hero-bg.jpg') right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 50px 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.beating-heart h2::after{
+    background: #FFFFFF;
+}
+
+.beating-heart h2{
+    margin-bottom: 30px;
+}
+
+.beating-heart span{
+    font-size: 100px;
+    line-height: 104px;
+}
+
+.heart{
+    width: 150px;
+    fill: red;
+    position: relative;
+    margin: 0 40px;
+    animation: hrt 1s infinite;
+}
+
+@keyframes hrt {
+    0%{
+        transform: scale(1);
+    }
+    15%{
+        transform: scale(1.25);
+    }
+    25%{
+        transform: scale(1.15);
+    }
+    35%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+ /* slider showcase */
+    .slider-div h2{
+        margin-bottom: 0;
+    }
+
+    .slider{
+        margin: 20px auto;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+
+    .slide{
+        max-height: 300px;
+        padding: 15px;
+    }
+
+    .slick-prev,
+    .slick-next{
+        background: #000000;
+        width: 40px;
+        height: 40px;
+    }
+
+    .slick-next{
+        right: 0;
+    }
+
+    .slick-prev{
+        left: 0;
+    }
+
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus
+    {
+        background: #000000;
+    }
+
+
+    /* Footer */
+
+    footer{
+        position: relative;
+        height: 150px;
+        background: #000000;
+        z-index: -2;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    footer h1{
+        color: #FFFFFF;
+        text-align: center;
+        position: fixed;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: bold;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: -1;
+        width: 800px;
+    }
+
+
+
+    /* MEDIA QUERY FOR RESPONSIVE WEBSITE */
+
+    @media only screen and (max-width:1160px){
+        .beating-heart span {
+            font-size: 20px;
+            line-height: 35px;
+        }
+        .heart{
+            width: 50px;
+        }
+    }
+
+
+
+    @media only screen and (max-width:768px) {
+
+        .main-trigger{
+            background: url('../images/hamburger-icon.svg') no-repeat center / cover ;
+            width: 35px;
+            height: 35px;
+            display: block;
+            z-index: 10;
+            top: 15px;
+            right: 25px;
+            position: absolute;
+        }
+
+        .main-overlay{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.72);
+            z-index: 6;
+            display: none;
+            
+        }
+
+        .main-overlay::after{
+            background: url('../images/close-icon.svg') no-repeat center / cover;
+            width: 35px;
+            height: 35px;
+            position: fixed;
+            right: 25px;
+            top: 10px;
+            display: block;
+            content: "";
+            z-index: 20;
+        }
+
+        .menu{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background: #131313;
+            width: 100%;
+            max-width: 300px;
+            z-index: 30;
+            margin: 0;
+            padding-left: 15px;
+            transform: translate3d(-100%,0,0);
+            transition: 0.5s all;
+        }
+
+        nav ul li {
+            margin-top: 10px;
+            display: block;
+            padding: 0;
+            padding-bottom: 15px;
+        }
+
+        nav ul li a{
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+        nav ul li a:hover{
+            border-color: transparent;
+        }
+
+        body.menu-is-active .menu{
+            transform: translate3d(0,0,0);
+            display: block;
+        }
+
+        body.menu-is-active .main-overlay{
+            display: block;
+        }
+
+        body.menu-is-active .main-trigger{
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width:560px){
+
+        ul#scene li.name{
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        ul#scene li.title{
+            font-size: 20px;
+            line-height: 25px;
+            margin-top: 40px;
+        }
+
+        .btn{
+            margin-top: 80px;
+        }
+
+        ul#scene{
+            margin-top: 60px;
+        }
+
+        .portfolio-btn,
+        .contact-btn{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 0;
+            font-size: 15px;
+            line-height: 20px;
+            max-width: 140px;
+        }
+
+        h2.sub-title{
+            margin: 20px auto;
+            font-size: 23px;
+            line-height: 28px;
+        }
+
+        section.beating-heart{
+            height: initial;
+        }
+
+        footer{
+            height: 100px;
+        }
+
+        footer h1{
+            font-size: 15px;
+            line-height: 20px;
+            bottom: 40px;
+        }
+
+        .menu{
+            width: 170px;
+        }
+    }
